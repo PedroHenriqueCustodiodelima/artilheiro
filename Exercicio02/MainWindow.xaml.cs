@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,10 +50,30 @@ namespace Exercicio02
             Jogador j = new Jogador();
             j.SetNome(txt1.Text);
             j.SetGols(int.Parse(txt2.Text));
+            j.SetNumero(int.Parse(txt3.Text));
+            j.SetAssistencia(int.Parse(txt4.Text));
             js[k] = j;
             k++;
             list.ItemsSource = null;
             list.ItemsSource = js;
+        }
+
+        private void assistente_Click(object sender, RoutedEventArgs e)
+        {
+            if (k == 0)
+            {
+                MessageBox.Show("Nenhum jogador foi inserido");
+                return;
+            }
+            Jogador x = js[0];
+            for (int r = 1; r < k; r++)
+            {
+                if (js[r].GetAssistencia() > x.GetAssistencia())
+                {
+                    x = js[r];
+                }
+                MessageBox.Show(x.ToString());
+            }
         }
     }
 }
