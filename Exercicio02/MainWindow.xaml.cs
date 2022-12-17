@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,7 +63,7 @@ namespace Exercicio02
             txt4.Clear();
         }
 
-        private void assistente_Click(object sender, RoutedEventArgs e)
+        private void Assistente_Click(object sender, RoutedEventArgs e)
         {
             if (k == 0)
             {
@@ -80,5 +80,7 @@ namespace Exercicio02
                 MessageBox.Show(x.ToString());
             }
         }
+
+   
     }
 }
