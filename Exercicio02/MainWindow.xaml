@@ -7,13 +7,18 @@
         mc:Ignorable="d"
         Title="Artilheiro" Height="400" Width="600">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="46,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"><Run Language="pt-br" Text="Nome"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="368,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"><Run Language="pt-br" Text="Gols"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="82,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"><Run Language="pt-br" Text="Nome"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="368,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"><Run Language="pt-br" Text="Gols"/></TextBlock>
         <TextBox Name="txt1" HorizontalAlignment="Left" Height="23" Margin="46,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
-        <TextBox Name="txt2" HorizontalAlignment="Left" Height="23" Margin="300,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
-        <Button Content="Inserir" HorizontalAlignment="Left" Height="27" Margin="46,118,0,0" VerticalAlignment="Top" Width="141" Click="Button_Click"/>
-        <Button Content="Artilheiro" HorizontalAlignment="Left" Height="27" Margin="300,118,0,0" VerticalAlignment="Top" Width="141" Click="Artilheiro_Click"/>
-        <ListBox Name="list" HorizontalAlignment="Left" Height="179" Margin="46,167,0,0" VerticalAlignment="Top" Width="529"/>
+        <TextBox Name="txt2" HorizontalAlignment="Left" Height="23" Margin="319,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" Height="27" Margin="46,192,0,0" VerticalAlignment="Top" Width="142" Click="Button_Click"/>
+        <Button Content="Artilheiro" HorizontalAlignment="Center" Height="27" Margin="0,192,0,0" VerticalAlignment="Top" Width="140" Click="Artilheiro_Click"/>
+        <ListBox Name="list" HorizontalAlignment="Left" Height="118" Margin="46,242,0,0" VerticalAlignment="Top" Width="528"/>
+        <TextBox x:Name="txt3" HorizontalAlignment="Left" Height="23" Margin="46,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" RenderTransformOrigin="1.301,0.393"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="82,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"><Run Language="pt-br" Text="Camisa"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBox x:Name="txt4" HorizontalAlignment="Left" Height="23" Margin="318,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" RenderTransformOrigin="1.301,0.393"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="368,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"><Run Language="pt-br" Text="Assistência"/></TextBlock>
+        <Button Content="playmaker" HorizontalAlignment="Left" Height="27" Margin="400,192,0,0" VerticalAlignment="Top" Width="140" Click="assistente_Click"/>
 
     </Grid>
 </Window>
